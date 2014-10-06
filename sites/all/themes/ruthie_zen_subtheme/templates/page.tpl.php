@@ -17,15 +17,10 @@ global $base_path;
       <a href="javascript:void(0);" id="menu-button-mobile"><img src="<?php echo $base_path;?>sites/default/files/menu-button-mobile.png"></a>
       <?php if ($main_menu): ?>
         <nav id="main-menu" role="navigation" tabindex="-1">
-            
           <?php
-          
-
             $menu_name = variable_get('menu_main_links_source', 'main-menu');
             $tree = menu_tree($menu_name);
             print drupal_render($tree);
-
-
           ?>
         </nav>
       <?php endif; ?>
@@ -71,15 +66,8 @@ global $base_path;
 </div>
 
 <div class="for-slider-wrapper">
-  <div id="page">
-    <div id="main">
-      <div id="header" role="banner">
-        <?php print render($page['below_header']); ?>
-      </div>
-    </div>
-  </div>
+  <?php print render($page['below_header']); ?>
 </div>
-
 
 <div class="page-wrapper-wrap bottom-gradient">
   <div id="page">
@@ -106,11 +94,7 @@ global $base_path;
       </div>
 
       <div id="navigation">
-
-        
-
         <?php print render($page['navigation']); ?>
-
       </div>
 
       <?php
