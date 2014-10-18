@@ -135,8 +135,9 @@
         <p><?php print theme_get_setting('description_text'); ?></p>
       </div>
       <div class="right">
-        <?php $image_url = file_create_url(file_load(theme_get_setting('my_image'))->uri); ?>
-        <img src="<?php print $image_url; ?>">
+        <?php //$image_url = file_create_url(file_load(theme_get_setting('my_image'))->uri); ?>
+        <?php $path = drupal_get_path('theme', 'customtheme') . '/images/ruthie-image.png'; ?>
+        <img src="<?php print $path; ?>">
       </div>
     </div>
   </div>
