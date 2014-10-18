@@ -139,7 +139,6 @@
           $path = drupal_get_path('theme', 'customtheme') . '/images/ruthie-image.png'; 
         ?>
         <img src="<?php print $path; ?>">
-        <?php echo var_dump($path);?>
       </div>
     </div>
   </div>
