@@ -1,0 +1,5 @@
+name = Contact Webform in a Block
+description = Putting the Contact Webform in a Block
+core = 7.x
+php = 5
+package = Ruthie Custom Modules

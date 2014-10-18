@@ -1,0 +1,26 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+function custommenu_block_info() {
+  $blocks = array();
+  $blocks['custommenu'] = array(
+    'info' => t('Bootstrap Custom Menu Block'),
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function custommenu_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'custommenu':
+      //$block['content'] = _customview_myworks_CONTENT();
+      break;
+  }
+  return $block;
+}
+

@@ -1,0 +1,65 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+function customslider_block_info() {
+  $blocks = array();
+  $blocks['galaxyslider'] = array(
+    'info' => t('Galaxy Slider'),
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function customslider_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'galaxyslider':
+      $block['content'] = _customslider_CONTENT();
+      break;
+  }
+  return $block;
+}
+
+function _customslider_return_nodes() {
+  $query = new EntityFieldQuery();
+  $query
+  ->entityCondition('entity_type', 'node')
+  ->entityCondition('bundle', 'slider_images');
+
+  $result = $query->execute();
+  $nodes = array();
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $nodes = node_load_multiple($nids);
+  }
+  return $nodes;
+}
+
+
+/**
+* Return the content of Galaxy Slider Block.
+*/
+function _customslider_CONTENT() {
+
+  $nodes = _customslider_return_nodes();
+  $content = '';
+  //$list = array();
+  foreach ($nodes as $node) {
+    $options = array('absolute' => TRUE);
+    $image = image_style_url('1600x306', $node->field_slider_image['und'][0]['filename']);
+    $content .= '<li><img src="' . $image . ' style="width:100%"></li>';
+  }
+
+  $render = array (
+    'container2' => array (
+      '#prefix' => '<div class="flexslider" id="galaxy-slider"><ul class="slides">',
+      '#markup' => $content,
+      '#suffix' => '</ul></div>',
+    ),
+  );
+  return $render;
+}

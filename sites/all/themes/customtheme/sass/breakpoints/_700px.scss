@@ -1,0 +1,135 @@
+@media (max-width:795px) {
+
+.description-container {
+  .description {
+    .left {
+      padding: 30px 10px 40px 30px;
+      h1 {
+        margin-bottom: 20px;
+        @include font-size(50);
+      }
+      p {
+        @include font-size(25);
+      }
+    }
+  }
+}
+
+
+#main-wrapper {
+  .term-menu-container {
+    width: 100%;
+    a {
+      margin-bottom: 5px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+      padding: 5px 9px;
+      width: 24%;
+      //margin-right: -1px;
+      background: #5da8ca;
+      -webkit-transition: all 0.3s; 
+      transition: all 0.3s;
+      &:hover{
+        text-decoration: none;
+        background: #ff9c9c;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+}
+
+
+@media (max-width:780px) {
+
+#footer {
+  .container {
+    .right {
+      a i {
+        @include font-size(300);
+        &:hover {
+          color: yellow;
+          @include font-size(300);
+        }
+      }
+    }
+  }
+
+
+}
+}
+
+
+
+@media (max-width: 770px) {
+
+#footer {
+  padding: 80px 0 20px 0;
+  h1.letstalk {
+    text-align: center;
+    letter-spacing: 5px;
+    @include font-size(70);
+    margin-bottom: 30px;
+    span{
+      display: inline-block;
+      border: solid 5px #fff;
+      text-align: center;
+      padding: 20px 25px 20px 30px;
+    }
+  }
+
+  .container {
+    .left, .right {
+      display: block;
+      margin-right: -4px;
+      width: 100%;
+      vertical-align: top;
+    }
+    .left {
+
+    }
+    .right {
+      padding-top: 20px;
+      a {
+        text-align: center;
+        margin-right: 10px;
+      }
+      a i {
+        @include font-size(300);
+      }
+    }
+  }
+
+
+  .webform-client-form {
+    label {
+      font-family: 'MyriadPro-Light';
+      @include font-size(30);
+    }
+    input, textarea {
+      width: 100%;
+    }
+  }
+
+}
+}
+
+
+
+@media (max-width:750px) {
+
+.name-container {
+  .name {
+    top: -69px;
+  }
+  h1 {
+    letter-spacing: 10px;
+    @include font-size(55);
+    padding: 16px 0;
+    padding-left: 20px;
+  }
+}
+
+}

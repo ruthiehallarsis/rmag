@@ -1,0 +1,28 @@
+@function calculateRem($size) {
+  $remSize: $size / 16;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: unquote($size + 'px');
+  font-size: calculateRem($size);
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/myriad-pro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/myriad-pro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/myriad-pro.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/myriad-pro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/myriad-pro.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url('../fonts/myriadpro-light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/myriadpro-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/myriadpro-light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/myriadpro-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/myriadpro-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+

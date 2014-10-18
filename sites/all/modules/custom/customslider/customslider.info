@@ -1,0 +1,5 @@
+name = Custom Slider
+description = Custom Slider
+core = 7.x
+php = 5
+package = Ruthie Custom Modules

@@ -1,0 +1,24 @@
+<?php
+
+function customwebform_block_info() {
+  $blocks = array();
+  $blocks['customwebform'] = array(
+    'info' => t('Contact Webform'),
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function customwebform_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'customwebform':
+      $webform_block = module_invoke('webform', 'block_view', 'client-block-17');
+      $block['content'] =  $webform_block['content'];
+      break;
+  }
+  return $block;
+}
+

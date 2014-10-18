@@ -1,0 +1,5 @@
+name = My Works Custom View
+description = Custom view for my works
+core = 7.x
+php = 5
+package = Ruthie Custom Modules

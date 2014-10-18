@@ -1,0 +1,124 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+function customview_block_info() {
+  $blocks = array();
+  $blocks['myworks'] = array(
+    'info' => t('My Works'),
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function customview_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'myworks':
+      $block['subject'] = 'Here are my some of my creations ..';
+      $block['content'] =  _customview_myworks_CONTENT();
+      //$block['content'] = 'hi';
+      break;
+  }
+  return $block;
+}
+
+
+/**
+* Return the nodes of My Works.
+*/
+
+function _customview_return_nodes() {
+  $query = new EntityFieldQuery();
+  $query
+  ->entityCondition('entity_type', 'node')
+  ->entityCondition('bundle', 'works')
+  ->propertyOrderBy('changed', 'DESC');
+
+  $result = $query->execute();
+  $nodes = array();
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $nodes = node_load_multiple($nids);
+  }
+  return $nodes;
+}
+
+
+/**
+* Return the taxonomy terms of My Works.
+*/
+
+function _customview_return_my_works_taxonomy_terms() {
+  $query = new EntityFieldQuery();
+  $query
+  ->entityCondition('entity_type', 'taxonomy_term')
+  ->entityCondition('bundle', 'my_works');
+
+  $result = $query->execute();
+  $taxonomy_terms = array();
+
+  if (isset($result['taxonomy_term'])) {
+    $tids = array_keys($result['taxonomy_term']);
+    $taxonomy_terms = taxonomy_term_load_multiple($tids);
+  }
+
+  $output = '<a class="filter" data-filter="all">All</a>';
+  foreach ($taxonomy_terms as $term) {
+    $tid = $term->tid;
+    $term_name = $term->name;
+    $output .= '<a class="filter" data-filter=".t' . $tid . '">' . $term_name . '</a>';
+  }
+
+  $final_output = '<div class="term-menu-container">' . $output . '</div>';
+  return $final_output;
+}
+
+
+
+/**
+* Returns taxonomy terms of a certain node in array.
+*/
+function _customview_return_taxonomy_terms_per_node($node) {
+  $output = ' ';
+  $items = field_get_items('node', $node, 'field_work_category');
+  foreach ($items as $item) {
+    $tid = $item['tid'];
+    $output .= 't' . $tid . ' ';
+  }
+  return $output;
+}
+
+
+/**
+* Return the content of My Works Block.
+*/
+function _customview_myworks_CONTENT() {
+
+  $nodes = _customview_return_nodes();
+  $content = '';
+  //$list = array();
+  foreach ($nodes as $node) {
+    $options = array('absolute' => TRUE);
+    $url = url('node/' . $node->nid, $options);
+    $node_title = $node->title;
+    $image = image_style_url('500x500_square', $node->field_work_main_photo['und'][0]['filename']);
+    $original_image = file_create_url($node->field_work_main_photo['und'][0]['uri']);
+    $row = '<a href=' . $original_image . ' class="fancybox"><div class="white-overlay">' . $node_title . '</div><img class="img-blur" src=' . $image . '></a>';
+    $term_classes = _customview_return_taxonomy_terms_per_node($node);
+    $content .= '<div class="mix col-xs-6 col-sm-4 col-md-2 ' . $term_classes . '"><div class="m-wrapper">' . $row . '</div></div>';
+  }
+
+  $term_menu = _customview_return_my_works_taxonomy_terms();
+  $render = array (
+    'container2' => array (
+      '#prefix' => '<div class="row" id="works-sortable-container">',
+      '#markup' => $term_menu . $content,
+      '#suffix' => '</div>',
+    ),
+  );
+  return $render;
+}

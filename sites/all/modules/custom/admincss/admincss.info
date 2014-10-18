@@ -1,0 +1,5 @@
+name = Admin CSS
+description = Adding Css to Admin
+core = 7.x
+php = 5
+package = Ruthie Custom Modules

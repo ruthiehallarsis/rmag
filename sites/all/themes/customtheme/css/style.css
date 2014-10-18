@@ -1,0 +1,996 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/myriad-pro.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/myriad-pro.eot?#iefix") format("embedded-opentype"), url("../fonts/myriad-pro.woff") format("woff"), url("../fonts/myriad-pro.ttf") format("truetype"), url("../fonts/myriad-pro.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MyriadPro-Light';
+  src: url("../fonts/myriadpro-light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/myriadpro-light.eot?#iefix") format("embedded-opentype"), url("../fonts/myriadpro-light.woff") format("woff"), url("../fonts/myriadpro-light.ttf") format("truetype"), url("../fonts/myriadpro-light.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/* line 2, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  /* Android Γëñ 2.3, iOS Γëñ 4 */
+  -moz-box-sizing: border-box;
+  /* Firefox Γëñ 28 */
+  box-sizing: border-box;
+  /* Chrome, Firefox 29+, IE 8+, Opera, Safari 5.1 */
+}
+
+/* line 9, ../sass/style.scss */
+img {
+  width: 100%;
+}
+
+/* line 14, ../sass/style.scss */
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 20, ../sass/style.scss */
+h1, h2 {
+  font-family: 'MyriadPro';
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* line 27, ../sass/style.scss */
+p {
+  font-family: 'MyriadPro-Light';
+  margin: 0;
+  padding: 0;
+}
+
+/* line 33, ../sass/style.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 40, ../sass/style.scss */
+.row {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*
+.white-overlay {
+  position:absolute;
+  width:100%;
+  height:0%;
+  background: url(../images/white-opaque.png) repeat;
+  bottom: 0px;
+  -webkit-transition: height 0.3s; 
+  transition: height 0.3s;
+  z-index: 100;
+  overflow: hidden !important;
+}
+
+.row a:hover > .white-overlay {
+  height:100%;
+}
+*/
+/* line 70, ../sass/style.scss */
+#works-sortable-container .mix {
+  display: none;
+}
+
+/* line 74, ../sass/style.scss */
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0px;
+}
+
+/* line 80, ../sass/style.scss */
+#header {
+  width: 100%;
+}
+/* line 83, ../sass/style.scss */
+#header .navbar {
+  width: 1200px;
+  margin: 0 auto;
+  background: #000000;
+  height: 50px;
+}
+/* line 88, ../sass/style.scss */
+#header .navbar a {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  transition: all 0.3s ease-out;
+}
+/* line 92, ../sass/style.scss */
+#header .navbar a:hover {
+  background: #ff9c9c;
+}
+/* line 96, ../sass/style.scss */
+#header .navbar #menu-bootstrap-custom-menu-right {
+  background: #717171;
+}
+/* line 101, ../sass/style.scss */
+#header .navbar-collapse {
+  background: #1e1e1e;
+}
+
+/* line 108, ../sass/style.scss */
+#block-customslider-galaxyslider .flexslider {
+  margin: 0 0 0 0px;
+  background: transparent;
+  border: none;
+  position: relative;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  zoom: 1;
+}
+/* line 124, ../sass/style.scss */
+#block-customslider-galaxyslider ul.slides li {
+  margin-top: -1px;
+}
+
+/* line 130, ../sass/style.scss */
+.name-container {
+  position: relative;
+  width: 100%;
+}
+/* line 133, ../sass/style.scss */
+.name-container .name {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+}
+/* line 138, ../sass/style.scss */
+.name-container h1 {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'MyriadPro';
+  color: #fff;
+  text-align: center;
+  background: url(../images/black-opaque.png) repeat;
+  letter-spacing: 20px;
+  font-size: 99px;
+  font-size: 6.1875rem;
+  padding: 16px 0;
+  padding-left: 20px;
+}
+
+/* line 152, ../sass/style.scss */
+.description-container {
+  background: url(../images/desc-back.jpg) no-repeat #ff9c9c;
+  background-size: auto 100%;
+  width: 100%;
+  min-height: 100px;
+  padding: 0;
+}
+/* line 158, ../sass/style.scss */
+.description-container .description {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 162, ../sass/style.scss */
+.description-container .description .left, .description-container .description .right {
+  display: inline-block;
+  min-height: 100px;
+  margin-right: -4px;
+  width: 50%;
+  color: #fff;
+  vertical-align: top;
+}
+/* line 170, ../sass/style.scss */
+.description-container .description .left {
+  padding: 47px 90px 50px 0;
+}
+/* line 172, ../sass/style.scss */
+.description-container .description .left h1 {
+  margin-bottom: 20px;
+  font-size: 80px;
+  font-size: 5rem;
+}
+/* line 176, ../sass/style.scss */
+.description-container .description .left p {
+  font-size: 48px;
+  font-size: 3rem;
+}
+/* line 180, ../sass/style.scss */
+.description-container .description .right {
+  height: auto;
+  overflow: hidden;
+}
+/* line 183, ../sass/style.scss */
+.description-container .description .right img {
+  height: 100%;
+}
+
+/* line 190, ../sass/style.scss */
+#main-wrapper {
+  width: 100%;
+  background: #78c2e5;
+  background: url(../images/works-back.jpg) no-repeat #78c2e5;
+  background-size: auto 100%;
+  background-position: right center;
+}
+/* line 197, ../sass/style.scss */
+#main-wrapper #block-customview-myworks {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 80px 0;
+}
+/* line 202, ../sass/style.scss */
+#main-wrapper #block-customview-myworks h2 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 70px;
+  font-size: 4.375rem;
+  margin-bottom: 30px;
+}
+/* line 210, ../sass/style.scss */
+#main-wrapper .white-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/black1-opaque.png) repeat;
+  bottom: -500px;
+  -webkit-transition: bottom 0.6s;
+  transition: bottom 0.6s;
+  z-index: 100;
+  overflow: hidden !important;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-size: 3.125rem;
+  line-height: 30px;
+}
+/* line 228, ../sass/style.scss */
+#main-wrapper .mix {
+  overflow: hidden;
+}
+/* line 232, ../sass/style.scss */
+#main-wrapper .m-wrapper {
+  width: 100%;
+  height: 100%;
+}
+/* line 237, ../sass/style.scss */
+#main-wrapper .row a:hover > .white-overlay {
+  bottom: 0px;
+}
+/* line 241, ../sass/style.scss */
+#main-wrapper .row img {
+  -webkit-opacity: 0.59;
+  -moz-opacity: 0.59;
+  opacity: 0.59;
+}
+/* line 247, ../sass/style.scss */
+#main-wrapper a.fancybox {
+  overflow: hidden;
+}
+/* line 251, ../sass/style.scss */
+#main-wrapper .term-menu-container {
+  text-align: center;
+  width: 100%;
+}
+/* line 255, ../sass/style.scss */
+#main-wrapper .term-menu-container a {
+  margin-bottom: 18px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 17px;
+  margin-right: 5px;
+  background: #5da8ca;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 265, ../sass/style.scss */
+#main-wrapper .term-menu-container a:hover {
+  text-decoration: none;
+  background: #ff9c9c;
+  cursor: pointer;
+}
+
+/* line 275, ../sass/style.scss */
+#footer {
+  width: 100%;
+  background: url(../images/contact-back.jpg) no-repeat #ffb57f;
+  background-size: 100% auto;
+  background-position: center bottom;
+  padding: 80px 0 60px 0;
+}
+/* line 281, ../sass/style.scss */
+#footer h1.letstalk {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 70px;
+  font-size: 4.375rem;
+  margin-bottom: 30px;
+}
+/* line 286, ../sass/style.scss */
+#footer h1.letstalk span {
+  display: inline-block;
+  border: solid 5px #fff;
+  text-align: center;
+  padding: 20px 25px 20px 30px;
+}
+/* line 294, ../sass/style.scss */
+#footer .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 298, ../sass/style.scss */
+#footer .container .left, #footer .container .right {
+  display: inline-block;
+  min-height: 100px;
+  margin-right: -4px;
+  width: 50%;
+  vertical-align: top;
+}
+/* line 306, ../sass/style.scss */
+#footer .container .left .messages.status {
+  width: 90%;
+}
+/* line 310, ../sass/style.scss */
+#footer .container .right {
+  padding-top: 70px;
+  text-align: center;
+}
+/* line 313, ../sass/style.scss */
+#footer .container .right a {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+/* line 318, ../sass/style.scss */
+#footer .container .right a i {
+  color: #fff;
+  font-size: 300px;
+  font-size: 18.75rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 323, ../sass/style.scss */
+#footer .container .right a i:hover {
+  color: yellow;
+  font-size: 330px;
+  font-size: 20.625rem;
+}
+/* line 332, ../sass/style.scss */
+#footer .webform-client-form label {
+  display: block;
+  color: #fff;
+  font-family: 'MyriadPro-Light';
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+/* line 338, ../sass/style.scss */
+#footer .webform-client-form input, #footer .webform-client-form textarea {
+  resize: none;
+  width: 90%;
+  outline: none;
+}
+/* line 344, ../sass/style.scss */
+#footer .webform-client-form input[type="text"], #footer .webform-client-form input[type="email"], #footer .webform-client-form input[type="submit"], #footer .webform-client-form textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+/* line 350, ../sass/style.scss */
+#footer .webform-client-form input[type="submit"] {
+  background: #eaa26c;
+  border-radius: 0px;
+  color: #fff;
+  border: 4px solid #fff;
+  text-transform: uppercase;
+  font-family: 'MyriadPro-Light';
+  padding: 20px;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+/* line 360, ../sass/style.scss */
+#footer .webform-client-form .form-item {
+  margin-bottom: 25px;
+}
+/* line 364, ../sass/style.scss */
+#footer .webform-client-form .error {
+  color: red;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+/* line 371, ../sass/style.scss */
+.copyright {
+  text-align: center;
+  background: #7a7a7a;
+  color: #fff;
+  font-family: 'MyriadPro-Light';
+  padding: 10px 0px;
+}
+
+@media (max-width: 1200px) {
+  /* line 4, ../sass/breakpoints/_1200px.scss */
+  #header .navbar {
+    width: 100%;
+  }
+
+  /* line 9, ../sass/breakpoints/_1200px.scss */
+  .name-container {
+    position: relative;
+    width: 100%;
+  }
+  /* line 12, ../sass/breakpoints/_1200px.scss */
+  .name-container .name {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+  }
+  /* line 17, ../sass/breakpoints/_1200px.scss */
+  .name-container h1 {
+    width: 100%;
+  }
+
+  /* line 24, ../sass/breakpoints/_1200px.scss */
+  #main-wrapper {
+    width: 100%;
+  }
+  /* line 26, ../sass/breakpoints/_1200px.scss */
+  #main-wrapper #block-customview-myworks {
+    width: 100%;
+    padding: 80px 20px 80px 20px;
+  }
+
+  /* line 33, ../sass/breakpoints/_1200px.scss */
+  .description-container .description {
+    width: 100%;
+  }
+  /* line 37, ../sass/breakpoints/_1200px.scss */
+  .description-container .description .left {
+    padding: 30px 50px 40px 30px;
+  }
+  /* line 39, ../sass/breakpoints/_1200px.scss */
+  .description-container .description .left h1 {
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-size: 4.375rem;
+  }
+  /* line 43, ../sass/breakpoints/_1200px.scss */
+  .description-container .description .left p {
+    font-size: 38px;
+    font-size: 2.375rem;
+  }
+
+  /* line 51, ../sass/breakpoints/_1200px.scss */
+  #footer {
+    padding: 80px 0 60px 0;
+  }
+  /* line 53, ../sass/breakpoints/_1200px.scss */
+  #footer h1.letstalk {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 70px;
+    font-size: 4.375rem;
+    margin-bottom: 30px;
+  }
+  /* line 58, ../sass/breakpoints/_1200px.scss */
+  #footer h1.letstalk span {
+    display: inline-block;
+    border: solid 5px #fff;
+    text-align: center;
+    padding: 20px 25px 20px 30px;
+  }
+  /* line 66, ../sass/breakpoints/_1200px.scss */
+  #footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+  /* line 70, ../sass/breakpoints/_1200px.scss */
+  #footer .container .left, #footer .container .right {
+    display: inline-block;
+    min-height: 100px;
+    margin-right: -4px;
+    width: 50%;
+    vertical-align: top;
+  }
+  /* line 80, ../sass/breakpoints/_1200px.scss */
+  #footer .container .right {
+    padding-top: 70px;
+    text-align: center;
+  }
+  /* line 83, ../sass/breakpoints/_1200px.scss */
+  #footer .container .right a {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+  }
+  /* line 88, ../sass/breakpoints/_1200px.scss */
+  #footer .container .right a i {
+    color: #fff;
+    font-size: 300px;
+    font-size: 18.75rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 93, ../sass/breakpoints/_1200px.scss */
+  #footer .container .right a i:hover {
+    color: yellow;
+    font-size: 330px;
+    font-size: 20.625rem;
+  }
+  /* line 102, ../sass/breakpoints/_1200px.scss */
+  #footer .webform-client-form label {
+    display: block;
+    color: #fff;
+    font-family: 'MyriadPro-Light';
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  /* line 108, ../sass/breakpoints/_1200px.scss */
+  #footer .webform-client-form input, #footer .webform-client-form textarea {
+    resize: none;
+    width: 90%;
+    outline: none;
+  }
+  /* line 114, ../sass/breakpoints/_1200px.scss */
+  #footer .webform-client-form input[type="text"], #footer .webform-client-form input[type="email"], #footer .webform-client-form input[type="submit"], #footer .webform-client-form textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  /* line 120, ../sass/breakpoints/_1200px.scss */
+  #footer .webform-client-form input[type="submit"] {
+    background: #eaa26c;
+    border-radius: 0px;
+    color: #fff;
+    border: 4px solid #fff;
+    text-transform: uppercase;
+    font-family: 'MyriadPro-Light';
+    padding: 20px;
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+  /* line 130, ../sass/breakpoints/_1200px.scss */
+  #footer .webform-client-form .form-item {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1130px) {
+  /* line 148, ../sass/breakpoints/_1200px.scss */
+  #footer .container .right a i:hover {
+    font-size: 300px;
+    font-size: 18.75rem;
+  }
+}
+@media (max-width: 1030px) {
+  /* line 165, ../sass/breakpoints/_1200px.scss */
+  .name-container .name {
+    top: -80px;
+  }
+  /* line 168, ../sass/breakpoints/_1200px.scss */
+  .name-container h1 {
+    letter-spacing: 15px;
+    font-size: 70px;
+    font-size: 4.375rem;
+    padding: 16px 0;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 990px) {
+  /* line 5, ../sass/breakpoints/_900px.scss */
+  .description-container .description .left {
+    padding: 30px 50px 40px 30px;
+  }
+  /* line 7, ../sass/breakpoints/_900px.scss */
+  .description-container .description .left h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-size: 3.75rem;
+  }
+  /* line 11, ../sass/breakpoints/_900px.scss */
+  .description-container .description .left p {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 930px) {
+  /* line 24, ../sass/breakpoints/_900px.scss */
+  #main-wrapper #block-customview-myworks {
+    padding: 65px 20px 80px 20px;
+  }
+  /* line 26, ../sass/breakpoints/_900px.scss */
+  #main-wrapper #block-customview-myworks h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 45px;
+    font-size: 2.8125rem;
+    margin-bottom: 30px;
+  }
+  /* line 34, ../sass/breakpoints/_900px.scss */
+  #main-wrapper .term-menu-container {
+    text-align: center;
+    width: 100%;
+  }
+  /* line 38, ../sass/breakpoints/_900px.scss */
+  #main-wrapper .term-menu-container a {
+    margin-bottom: 18px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 17px;
+    margin-right: 5px;
+    background: #5da8ca;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 48, ../sass/breakpoints/_900px.scss */
+  #main-wrapper .term-menu-container a:hover {
+    text-decoration: none;
+    background: #ff9c9c;
+    cursor: pointer;
+  }
+}
+@media (max-width: 924px) {
+  /* line 63, ../sass/breakpoints/_900px.scss */
+  #main-wrapper #block-customview-myworks {
+    padding: 65px 20px 80px 20px;
+  }
+  /* line 65, ../sass/breakpoints/_900px.scss */
+  #main-wrapper #block-customview-myworks h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 45px;
+    font-size: 2.8125rem;
+    margin-bottom: 18px;
+  }
+  /* line 74, ../sass/breakpoints/_900px.scss */
+  #main-wrapper .term-menu-container a {
+    margin-bottom: 18px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 13px;
+    margin-right: 5px;
+    background: #5da8ca;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 84, ../sass/breakpoints/_900px.scss */
+  #main-wrapper .term-menu-container a:hover {
+    text-decoration: none;
+    background: #ff9c9c;
+    cursor: pointer;
+  }
+}
+@media (max-width: 860px) {
+  /* line 5, ../sass/breakpoints/_800px.scss */
+  #main-wrapper #block-customview-myworks h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-size: 2.1875rem;
+    margin-bottom: 12px;
+  }
+  /* line 14, ../sass/breakpoints/_800px.scss */
+  #main-wrapper .term-menu-container a {
+    margin-bottom: 12px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 9px;
+    margin-right: 5px;
+    background: #5da8ca;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 24, ../sass/breakpoints/_800px.scss */
+  #main-wrapper .term-menu-container a:hover {
+    text-decoration: none;
+    background: #ff9c9c;
+    cursor: pointer;
+  }
+}
+@media (max-width: 795px) {
+  /* line 5, ../sass/breakpoints/_700px.scss */
+  .description-container .description .left {
+    padding: 30px 10px 40px 30px;
+  }
+  /* line 7, ../sass/breakpoints/_700px.scss */
+  .description-container .description .left h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+  /* line 11, ../sass/breakpoints/_700px.scss */
+  .description-container .description .left p {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+
+  /* line 20, ../sass/breakpoints/_700px.scss */
+  #main-wrapper .term-menu-container {
+    width: 100%;
+  }
+  /* line 22, ../sass/breakpoints/_700px.scss */
+  #main-wrapper .term-menu-container a {
+    margin-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 9px;
+    width: 24%;
+    background: #5da8ca;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 33, ../sass/breakpoints/_700px.scss */
+  #main-wrapper .term-menu-container a:hover {
+    text-decoration: none;
+    background: #ff9c9c;
+    cursor: pointer;
+  }
+}
+@media (max-width: 780px) {
+  /* line 50, ../sass/breakpoints/_700px.scss */
+  #footer .container .right a i {
+    font-size: 300px;
+    font-size: 18.75rem;
+  }
+  /* line 52, ../sass/breakpoints/_700px.scss */
+  #footer .container .right a i:hover {
+    color: yellow;
+    font-size: 300px;
+    font-size: 18.75rem;
+  }
+}
+@media (max-width: 770px) {
+  /* line 68, ../sass/breakpoints/_700px.scss */
+  #footer {
+    padding: 80px 0 20px 0;
+  }
+  /* line 70, ../sass/breakpoints/_700px.scss */
+  #footer h1.letstalk {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 70px;
+    font-size: 4.375rem;
+    margin-bottom: 30px;
+  }
+  /* line 75, ../sass/breakpoints/_700px.scss */
+  #footer h1.letstalk span {
+    display: inline-block;
+    border: solid 5px #fff;
+    text-align: center;
+    padding: 20px 25px 20px 30px;
+  }
+  /* line 84, ../sass/breakpoints/_700px.scss */
+  #footer .container .left, #footer .container .right {
+    display: block;
+    margin-right: -4px;
+    width: 100%;
+    vertical-align: top;
+  }
+  /* line 93, ../sass/breakpoints/_700px.scss */
+  #footer .container .right {
+    padding-top: 20px;
+  }
+  /* line 95, ../sass/breakpoints/_700px.scss */
+  #footer .container .right a {
+    text-align: center;
+    margin-right: 10px;
+  }
+  /* line 99, ../sass/breakpoints/_700px.scss */
+  #footer .container .right a i {
+    font-size: 300px;
+    font-size: 18.75rem;
+  }
+  /* line 107, ../sass/breakpoints/_700px.scss */
+  #footer .webform-client-form label {
+    font-family: 'MyriadPro-Light';
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  /* line 111, ../sass/breakpoints/_700px.scss */
+  #footer .webform-client-form input, #footer .webform-client-form textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  /* line 124, ../sass/breakpoints/_700px.scss */
+  .name-container .name {
+    top: -69px;
+  }
+  /* line 127, ../sass/breakpoints/_700px.scss */
+  .name-container h1 {
+    letter-spacing: 10px;
+    font-size: 55px;
+    font-size: 3.4375rem;
+    padding: 16px 0;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 680px) {
+  /* line 5, ../sass/breakpoints/_600px.scss */
+  .description-container .description .left {
+    padding: 20px 0px 40px 20px;
+  }
+  /* line 7, ../sass/breakpoints/_600px.scss */
+  .description-container .description .left h1 {
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-size: 2.8125rem;
+  }
+  /* line 11, ../sass/breakpoints/_600px.scss */
+  .description-container .description .left p {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+@media (max-width: 650px) {
+  /* line 26, ../sass/breakpoints/_600px.scss */
+  .name-container .name {
+    top: -57px;
+  }
+  /* line 29, ../sass/breakpoints/_600px.scss */
+  .name-container h1 {
+    letter-spacing: 10px;
+    font-size: 55px;
+    font-size: 3.4375rem;
+    padding: 10px 0;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 635px) {
+  /* line 43, ../sass/breakpoints/_600px.scss */
+  #main-wrapper .term-menu-container {
+    width: 100%;
+  }
+  /* line 45, ../sass/breakpoints/_600px.scss */
+  #main-wrapper .term-menu-container a {
+    color: #fff;
+    padding: 5px 9px;
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 630px) {
+  /* line 62, ../sass/breakpoints/_600px.scss */
+  .description-container .description .left, .description-container .description .rightf {
+    display: block;
+    width: 100%;
+  }
+  /* line 67, ../sass/breakpoints/_600px.scss */
+  .description-container .description .right {
+    display: none;
+  }
+  /* line 70, ../sass/breakpoints/_600px.scss */
+  .description-container .description .left {
+    padding: 20px 20px 20px 20px;
+  }
+  /* line 72, ../sass/breakpoints/_600px.scss */
+  .description-container .description .left h1 {
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-size: 2.8125rem;
+    text-align: center;
+  }
+  /* line 77, ../sass/breakpoints/_600px.scss */
+  .description-container .description .left p {
+    font-size: 25px;
+    font-size: 1.5625rem;
+    text-align: center;
+  }
+}
+@media (max-width: 560px) {
+  /* line 4, ../sass/breakpoints/_500px.scss */
+  .name-container .name {
+    top: -46px;
+  }
+  /* line 7, ../sass/breakpoints/_500px.scss */
+  .name-container h1 {
+    letter-spacing: 7px;
+    font-size: 45px;
+    font-size: 2.8125rem;
+    padding: 8px 0;
+    padding-left: 20px;
+  }
+
+  /* line 17, ../sass/breakpoints/_500px.scss */
+  #main-wrapper .term-menu-container {
+    text-align: center;
+    width: 100%;
+  }
+  /* line 20, ../sass/breakpoints/_500px.scss */
+  #main-wrapper .term-menu-container a {
+    width: 31%;
+  }
+}
+@media (max-width: 520px) {
+  /* line 35, ../sass/breakpoints/_500px.scss */
+  .name-container .name {
+    position: relative;
+    top: 0;
+  }
+  /* line 39, ../sass/breakpoints/_500px.scss */
+  .name-container h1 {
+    letter-spacing: 7px;
+    font-size: 45px;
+    font-size: 2.8125rem;
+    padding: 8px 0;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 460px) {
+  /* line 4, ../sass/breakpoints/_400px.scss */
+  .name-container h1 {
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-size: 1.875rem;
+    padding: 8px 0;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 430px) {
+  /* line 18, ../sass/breakpoints/_400px.scss */
+  #main-wrapper .term-menu-container {
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+  }
+  /* line 22, ../sass/breakpoints/_400px.scss */
+  #main-wrapper .term-menu-container a {
+    width: 31%;
+    min-height: 40px;
+    vertical-align: top;
+  }
+}
+@media (max-width: 405px) {
+  /* line 37, ../sass/breakpoints/_400px.scss */
+  #main-wrapper .term-menu-container {
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+  }
+  /* line 41, ../sass/breakpoints/_400px.scss */
+  #main-wrapper .term-menu-container a {
+    width: 31%;
+    min-height: 40px;
+    vertical-align: top;
+  }
+
+  /* line 51, ../sass/breakpoints/_400px.scss */
+  #footer .container .right {
+    padding-top: 20px;
+    text-align: center;
+  }
+  /* line 54, ../sass/breakpoints/_400px.scss */
+  #footer .container .right a i {
+    font-size: 200px;
+    font-size: 12.5rem;
+  }
+  /* line 56, ../sass/breakpoints/_400px.scss */
+  #footer .container .right a i:hover {
+    font-size: 200px;
+    font-size: 12.5rem;
+  }
+}

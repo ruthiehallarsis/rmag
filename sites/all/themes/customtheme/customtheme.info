@@ -1,0 +1,28 @@
+name = Custom Theme
+description = Custom theme for testing
+core = 7.x
+engine = phptemplate
+
+;STYLESHEETS
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/flexslider.css
+stylesheets[all][] = css/font-awesome.css
+stylesheets[all][] = css/style.css
+
+
+;REGIONS
+regions[header] = Header
+regions[content] = Content
+regions[myworks] = My Works
+regions[footer] = Footer
+
+
+;JAVASCRIPT
+scripts[] = js/modernizr.js
+scripts[] = js/selectivizr.js
+scripts[] = js/bootstrap.js
+scripts[] = js/jquery.mixitup.js
+scripts[] = js/jquery.flexslider.js
+scripts[] = js/script.js

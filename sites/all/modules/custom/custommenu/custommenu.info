@@ -1,0 +1,5 @@
+name = Custom Menu 
+description = Custom Menu Override
+core = 7.x
+php = 5
+package = Ruthie Custom Modules

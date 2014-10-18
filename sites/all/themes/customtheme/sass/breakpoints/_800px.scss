@@ -1,0 +1,33 @@
+@media (max-width:860px) {
+
+#main-wrapper {
+  #block-customview-myworks {
+    h2{
+      text-align: center;
+      letter-spacing: 1px;
+      @include font-size(35);
+      margin-bottom: 12px;
+    }
+  }
+
+  .term-menu-container {
+    a {
+      margin-bottom: 12px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+      padding: 5px 9px;
+      margin-right: 5px;
+      background: #5da8ca;
+      -webkit-transition: all 0.3s; 
+      transition: all 0.3s;
+      &:hover{
+        text-decoration: none;
+        background: #ff9c9c;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+}
