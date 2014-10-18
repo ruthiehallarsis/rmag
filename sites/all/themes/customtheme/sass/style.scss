@@ -272,6 +272,10 @@ $media-desktop-width: 1200px;
         cursor: pointer;
       }
     }
+
+    .active {
+      background: #ff9c9c;
+    }
   }
 }
 
