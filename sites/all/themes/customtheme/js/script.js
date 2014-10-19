@@ -1,5 +1,7 @@
 jQuery(document).ready(function(){
+
 	jQuery('#works-sortable-container').mixItUp();
+  
   jQuery( "h1:contains('Welcome to Ruthie')" ).remove();
 
   jQuery('#galaxy-slider').flexslider({
