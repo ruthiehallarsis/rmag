@@ -12,8 +12,18 @@ jQuery(document).ready(function(){
     slideshowSpeed: 1500
   });
 
+  jQuery("#menu-bootstrap-custom-menu li:first-child a").addClass("active");
+
   jQuery("#navbar li a").click(function(event) {
-    // check if window is small enough so dropdown is created
     jQuery("#navbarCollapse").removeClass("in").addClass("collapse");
   });
+
+  jQuery("#menu-bootstrap-custom-menu li a").click(function() {
+    jQuery(this).addClass("active");
+    jQuery('#menu-bootstrap-custom-menu li a').not(this).each(function(){
+      jQuery(this).removeClass('active');
+    });
+  });
+
+
 });

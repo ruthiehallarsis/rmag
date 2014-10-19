@@ -82,6 +82,9 @@ $media-desktop-width: 1200px;
       -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
           transition: all 0.3s ease-out;
       &:hover {
+        background: #ff9c9c - 50;
+      }
+      &.active{
         background: #ff9c9c;
       }
     }

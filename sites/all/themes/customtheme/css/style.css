@@ -216,18 +216,22 @@ p {
 }
 /* line 84, ../sass/style.scss */
 #header .navbar a:hover {
+  background: #cd6a6a;
+}
+/* line 87, ../sass/style.scss */
+#header .navbar a.active {
   background: #ff9c9c;
 }
-/* line 88, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 #header .navbar #menu-bootstrap-custom-menu-right {
   background: #717171;
 }
-/* line 93, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 #header .navbar-collapse {
   background: #1e1e1e;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 #block-customslider-galaxyslider .flexslider {
   margin: 0 0 0 0px;
   background: transparent;
@@ -243,17 +247,17 @@ p {
   box-shadow: none;
   zoom: 1;
 }
-/* line 116, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 #block-customslider-galaxyslider ul.slides li {
   margin-top: -1px;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .name-container {
   position: relative;
   width: 100%;
 }
-/* line 125, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .name-container .name {
   position: absolute;
   top: -100px;
@@ -262,7 +266,7 @@ p {
   -moz-animation: namefade 4s;
   animation: namefade 4s;
 }
-/* line 133, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .name-container h1 {
   width: 1200px;
   margin: 0 auto;
@@ -277,7 +281,7 @@ p {
   padding-left: 20px;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .description-container {
   background: url(../images/desc-back.jpg) no-repeat #ff9c9c;
   background-size: auto 100%;
@@ -285,13 +289,13 @@ p {
   min-height: 100px;
   padding: 0;
 }
-/* line 154, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .description-container .description {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
-/* line 158, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .description-container .description .left, .description-container .description .right {
   display: inline-block;
   min-height: 100px;
@@ -301,25 +305,25 @@ p {
   vertical-align: top;
   position: relative;
 }
-/* line 167, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .description-container .description .left {
   padding: 47px 90px 50px 0;
   -webkit-animation: descposition 3s;
   -moz-animation: descposition 3s;
   animation: descposition 3s;
 }
-/* line 173, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .description-container .description .left h1 {
   margin-bottom: 20px;
   font-size: 80px;
   font-size: 5rem;
 }
-/* line 177, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .description-container .description .left p {
   font-size: 48px;
   font-size: 3rem;
 }
-/* line 181, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .description-container .description .right {
   -webkit-animation: imgposition 3s;
   -moz-animation: imgposition 3s;
@@ -327,12 +331,12 @@ p {
   height: auto;
   overflow: hidden;
 }
-/* line 187, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .description-container .description .right img {
   height: 100%;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 #main-wrapper {
   width: 100%;
   background: #78c2e5;
@@ -340,13 +344,13 @@ p {
   background-size: auto 100%;
   background-position: right center;
 }
-/* line 201, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 #main-wrapper #block-customview-myworks {
   width: 1200px;
   margin: 0 auto;
   padding: 80px 0 80px 0;
 }
-/* line 206, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #main-wrapper #block-customview-myworks h2 {
   text-align: center;
   letter-spacing: 5px;
@@ -354,7 +358,7 @@ p {
   font-size: 4.375rem;
   margin-bottom: 30px;
 }
-/* line 214, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 #main-wrapper .white-overlay {
   position: absolute;
   width: 100%;
@@ -373,35 +377,35 @@ p {
   font-size: 3.125rem;
   line-height: 30px;
 }
-/* line 232, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 #main-wrapper .mix {
   overflow: hidden;
 }
-/* line 236, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 #main-wrapper .m-wrapper {
   width: 100%;
   height: 100%;
 }
-/* line 241, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 #main-wrapper .row a:hover > .white-overlay {
   bottom: 0px;
 }
-/* line 245, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 #main-wrapper .row img {
   -webkit-opacity: 0.59;
   -moz-opacity: 0.59;
   opacity: 0.59;
 }
-/* line 251, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 #main-wrapper a.fancybox {
   overflow: hidden;
 }
-/* line 255, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 #main-wrapper .term-menu-container {
   text-align: center;
   width: 100%;
 }
-/* line 259, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 #main-wrapper .term-menu-container a {
   margin-bottom: 18px;
   text-align: center;
@@ -413,18 +417,18 @@ p {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 269, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 #main-wrapper .term-menu-container a:hover {
   text-decoration: none;
   background: #ff9c9c;
   cursor: pointer;
 }
-/* line 276, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 #main-wrapper .term-menu-container .active {
   background: #ff9c9c;
 }
 
-/* line 283, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 #footer {
   width: 100%;
   background: url(../images/contact-back.jpg) no-repeat #ffb57f;
@@ -432,7 +436,7 @@ p {
   background-position: center bottom;
   padding: 80px 0 60px 0;
 }
-/* line 289, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 #footer h1.letstalk {
   text-align: center;
   letter-spacing: 5px;
@@ -440,20 +444,20 @@ p {
   font-size: 4.375rem;
   margin-bottom: 30px;
 }
-/* line 294, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 #footer h1.letstalk span {
   display: inline-block;
   border: solid 5px #fff;
   text-align: center;
   padding: 20px 25px 20px 30px;
 }
-/* line 302, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 #footer .container {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
-/* line 306, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 #footer .container .left, #footer .container .right {
   display: inline-block;
   min-height: 100px;
@@ -461,22 +465,22 @@ p {
   width: 50%;
   vertical-align: top;
 }
-/* line 314, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 #footer .container .left .messages.status {
   width: 90%;
 }
-/* line 318, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 #footer .container .right {
   padding-top: 70px;
   text-align: center;
 }
-/* line 321, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 #footer .container .right a {
   display: inline-block;
   text-align: center;
   margin-right: 10px;
 }
-/* line 326, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 #footer .container .right a i {
   color: #fff;
   font-size: 300px;
@@ -484,13 +488,13 @@ p {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 331, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 #footer .container .right a i:hover {
   color: yellow;
   font-size: 330px;
   font-size: 20.625rem;
 }
-/* line 340, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 #footer .webform-client-form label {
   display: block;
   color: #fff;
@@ -498,19 +502,19 @@ p {
   font-size: 30px;
   font-size: 1.875rem;
 }
-/* line 346, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 #footer .webform-client-form input, #footer .webform-client-form textarea {
   resize: none;
   width: 90%;
   outline: none;
 }
-/* line 352, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 #footer .webform-client-form input[type="text"], #footer .webform-client-form input[type="email"], #footer .webform-client-form input[type="submit"], #footer .webform-client-form textarea {
   border: none;
   border-radius: 5px;
   padding: 20px;
 }
-/* line 358, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 #footer .webform-client-form input[type="submit"] {
   background: #eaa26c;
   border-radius: 0px;
@@ -522,18 +526,18 @@ p {
   font-size: 40px;
   font-size: 2.5rem;
 }
-/* line 368, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 #footer .webform-client-form .form-item {
   margin-bottom: 25px;
 }
-/* line 372, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 #footer .webform-client-form .error {
   color: red;
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 379, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .copyright {
   text-align: center;
   background: #7a7a7a;
