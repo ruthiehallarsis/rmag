@@ -26,3 +26,4 @@ scripts[] = js/bootstrap.js
 scripts[] = js/jquery.mixitup.js
 scripts[] = js/jquery.flexslider.js
 scripts[] = js/script.js
+

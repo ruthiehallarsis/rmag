@@ -1,0 +1,13 @@
+<?php
+
+function ruthiewaypoints_preprocess_page(&$variables){
+
+  global $user;
+
+  if (is_array($user->roles) && in_array('administrator', $user->roles)) {
+    drupal_add_js(array('ruthiewaypoints' => array('user' => 'administrator')), 'setting');
+  } else {
+    drupal_add_js(array('ruthiewaypoints' => array('user' => 'user')), 'setting');
+  }
+  
+}

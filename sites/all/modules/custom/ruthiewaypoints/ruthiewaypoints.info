@@ -1,0 +1,9 @@
+name = Waypoints in custom menu
+description = Waypoints in custom menu
+core = 7.x
+php = 5
+package = Ruthie Custom Modules
+
+
+scripts[] = waypoints.js
+scripts[] = ruthiewaypoints.js
